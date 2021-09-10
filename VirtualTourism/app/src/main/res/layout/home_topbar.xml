@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="#BC3228"
+    android:orientation="horizontal"
+    android:weightSum="100"
+    android:elevation="4dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Tourist"
+        android:layout_marginStart="8dp"
+        android:textSize="40sp"
+        >
+
+    </TextView>
+</LinearLayout>

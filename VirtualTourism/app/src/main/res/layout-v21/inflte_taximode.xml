@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="8dp"
+    android:layout_marginTop="1dp"
+    android:background="#645A9C"
+    android:elevation="5dp"
+    android:id="@+id/parentLayout">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/timage"
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:layout_marginLeft="15dp">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/tname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/timage"
+        android:layout_marginLeft="30dp"
+        android:text="Name of booker"
+        android:textSize="25sp"/>
+    <TextView
+        android:id="@+id/tmodel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tname"
+        android:layout_toEndOf="@+id/timage"
+        android:layout_marginLeft="30dp"
+        android:text="Destination :"
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/tmodel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tname"
+        android:layout_toEndOf="@+id/tmodel"
+        android:layout_marginLeft="10dp"
+        android:text=""
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/tnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/timage"
+        android:layout_below="@+id/tmodel"
+        android:layout_marginLeft="30dp"
+        android:text="Phone :"
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/tnumber1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/tnumber"
+        android:layout_below="@+id/tmodel1"
+        android:layout_marginLeft="48dp"
+        android:text=""
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/tlocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/timage"
+        android:layout_below="@+id/tnumber"
+        android:layout_marginLeft="30dp"
+        android:text="Loacation :"
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/tlocation1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/tlocation"
+        android:layout_below="@+id/tnumber"
+        android:layout_marginLeft="24dp"
+        android:text=""
+        android:textSize="18sp"/>
+</RelativeLayout>

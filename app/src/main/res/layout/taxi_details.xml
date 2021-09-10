@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="2dp"
+    android:id="@+id/parentLayout">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/timage"
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:layout_marginLeft="15dp">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/tname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/timage"
+        android:layout_marginLeft="30dp"
+        android:text="Name of owner"
+        android:textSize="25sp"/>
+    <TextView
+        android:id="@+id/tmodel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tname"
+        android:layout_toEndOf="@+id/timage"
+        android:layout_marginLeft="30dp"
+        android:text="Car model"
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/tnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/timage"
+        android:layout_below="@+id/tmodel"
+        android:layout_marginLeft="30dp"
+        android:text="number"
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/trating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/timage"
+        android:layout_below="@+id/tnumber"
+        android:layout_marginLeft="30dp"
+        android:text="rating"
+        android:textSize="18sp"/>
+    <View style="@style/homeDetailsView"
+        android:layout_marginTop="10dp"
+        android:background="#7A7979"
+        android:layout_below="@id/timage" />
+</RelativeLayout>

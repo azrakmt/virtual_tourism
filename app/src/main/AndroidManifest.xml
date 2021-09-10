@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.google.firebase.ml.mddd"
+    android:installLocation="auto">
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/logo_mlkit"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name="com.google.firebase.ml.mddd.java.MonumentImages"></activity>
+        <activity android:name="com.google.firebase.ml.mddd.cameraActivity" />
+        <activity
+            android:name="com.google.firebase.ml.mddd.java.hotel_mode"
+            android:theme="@style/Mytheme" />
+        <activity android:name="com.google.firebase.ml.mddd.java.settings.taxi_user_selected" />
+        <activity android:name="com.google.firebase.ml.mddd.java.Taxi_mode" />
+        <activity android:name="com.google.firebase.ml.mddd.Hotel_search" />
+        <activity android:name="com.google.firebase.ml.mddd.Taxi_booking" />
+        <activity android:name="com.google.firebase.ml.mddd.Search_result" />
+        <activity android:name="com.google.firebase.ml.mddd.new_search" />
+        <activity
+            android:name="com.google.firebase.ml.mddd.splash_screen"
+            android:theme="@style/fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.google.firebase.ml.mddd.profile"
+            android:theme="@style/AppTheme.ProfileTheme" />
+        <activity android:name="com.google.firebase.ml.mddd.signup" />
+        <activity
+            android:name="com.google.firebase.ml.mddd.home"
+            android:label="@string/title_activity_home" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name="com.google.firebase.ml.mddd.EntryChoiceActivity"
+            android:exported="true"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name="com.google.firebase.ml.mddd.java.MainActivity"
+            android:exported="false"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name="com.google.firebase.ml.mddd.java.LiveObjectDetectionActivity"
+            android:exported="false"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name="com.google.firebase.ml.mddd.java.LiveBarcodeScanningActivity"
+            android:exported="false"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name="com.google.firebase.ml.mddd.java.StaticObjectDetectionActivity"
+            android:exported="false"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name="com.google.firebase.ml.mddd.java.settings.SettingsActivity"
+            android:exported="false"
+            android:label="@string/settings_title"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.google.firebase.ml.mddd.LoginActivity"
+            android:exported="false"
+            android:noHistory="true"
+            android:screenOrientation="unspecified" />
+    </application>
+
+</manifest>
